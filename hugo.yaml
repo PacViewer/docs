@@ -1,6 +1,6 @@
 # Configuration
 baseURL: "https://docs.pacviewer.com/"
-title: "Pacviewer Documentation"
+title: "PacViewer Documentation"
 
 enableRobotsTXT: true
 enableGitInfo: true
