@@ -11,4 +11,3 @@ Similarly, all endpoints and parameter formatting remain the same across testnet
 |---------|---------------------------|
 | Mainnet | https://api.pacviewer.com | 
 | Testnet | -                         | 
-|         |                           |
