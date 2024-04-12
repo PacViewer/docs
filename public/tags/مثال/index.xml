@@ -1,0 +1,18 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pacviewer Documentation – مثال</title>
+    <link>http://localhost:1313/tags/%D9%85%D8%AB%D8%A7%D9%84/</link>
+    <description>Recent content in مثال on Pacviewer Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="http://localhost:1313/tags/%D9%85%D8%AB%D8%A7%D9%84/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>
