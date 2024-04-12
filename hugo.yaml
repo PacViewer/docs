@@ -20,12 +20,12 @@ languages:
   en:
     languageName: English
     weight: 1
-    title: Pacviewer Documentation
+    title: PacViewer Documentation
   zh-cn:
     languageName: 简体中文
     languageCode: zh-CN
     weight: 2
-    title: Pacviewer 文档
+    title: PacViewer 文档
 
 module:
   imports:
@@ -43,7 +43,7 @@ enableInlineShortcodes: true
 menu:
   main:
     - identifier: home
-      name:   ↗ Pacviewer
+      name:   ↗ PacViewer
       url: "https://pacviewer.com"
       weight: 1
     - identifier: documentation
