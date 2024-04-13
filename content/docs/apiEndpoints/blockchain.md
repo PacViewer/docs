@@ -56,3 +56,104 @@ https://api.pacviewer.com/v1/circulation_supply
   {{< /tab >}}
 
 {{< /tabs >}}
+
+### Get Total Value Locked (TVL)
+{{< hextra/hero-badge >}} {{< icon name="code" attributes="height=14" >}} Free, No Auth {{< /hextra/hero-badge >}}
+
+Return Total Value Locked (TVL).
+
+{{< callout type="info" >}}
+**Total Value Locked (TVL) =**  Staked x Price
+
+{{< /callout >}}
+
+```
+https://api.pacviewer.com/v1/total_value_locked
+```
+
+{{< tabs items="Request, Response" >}}
+  {{< tab >}}
+**Query Params**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+
+**Headers**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+**Body**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+  {{< /tab >}}
+  {{< tab >}}
+
+  **Status OK 200**
+
+  ```json
+{
+  "status": 200,
+  "message": "OK",
+  "data": {
+    "value": 439734.2503423898
+  }
+}
+  ```
+  {{< /tab >}}
+
+{{< /tabs >}}
+
+
+### Fully Diluted Valuation (FDV)
+{{< hextra/hero-badge >}} {{< icon name="code" attributes="height=14" >}} Free, No Auth {{< /hextra/hero-badge >}}
+
+Return Fully Diluted Valuation (FDV).
+
+{{< callout type="info" >}}
+**Fully Diluted Valuation (FDV) =** Staked + Circulating x Price
+
+{{< /callout >}}
+
+```
+https://api.pacviewer.com/v1/fully_diluted_valuation
+```
+
+{{< tabs items="Request, Response" >}}
+  {{< tab >}}
+**Query Params**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+
+**Headers**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+**Body**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+  {{< /tab >}}
+  {{< tab >}}
+
+  **Status OK 200**
+
+  ```json
+{
+  "status": 200,
+  "message": "OK",
+  "data": {
+    "value": 840257.9343933696
+  }
+}
+  ```
+  {{< /tab >}}
+
+{{< /tabs >}}
