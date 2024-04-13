@@ -5,7 +5,8 @@ weight: 5
 
 List of endpoints for get current details of Pactus blockchain.
 
-### Get Circulation Supply {{< hextra/hero-badge >}} {{< icon name="code" attributes="height=14" >}} Free, No Auth {{< /hextra/hero-badge >}}
+### Get Circulation Supply 
+{{< hextra/hero-badge >}} {{< icon name="code" attributes="height=14" >}} Free, No Auth {{< /hextra/hero-badge >}}
 
 Returns current circulation supply.
 
