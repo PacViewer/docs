@@ -18,7 +18,7 @@ Circulation Supply formula ([Pactus FAQs](https://pactus.org/about/faq/#genesis_
 {{< /callout >}}
 
 ```
-https://api.pacviewer.com/v1/circulation_supply
+GET https://api.pacviewer.com/v1/circulation_supply
 ```
 
 {{< tabs items="Request, Response" >}}
@@ -68,7 +68,7 @@ Return Total Value Locked (TVL).
 {{< /callout >}}
 
 ```
-https://api.pacviewer.com/v1/total_value_locked
+GET https://api.pacviewer.com/v1/total_value_locked
 ```
 
 {{< tabs items="Request, Response" >}}
@@ -108,7 +108,7 @@ https://api.pacviewer.com/v1/total_value_locked
 {{< /tabs >}}
 
 
-### Fully Diluted Valuation (FDV)
+### Get Fully Diluted Valuation (FDV)
 {{< hextra/hero-badge >}} {{< icon name="code" attributes="height=14" >}} Free, No Auth {{< /hextra/hero-badge >}}
 
 Return Fully Diluted Valuation (FDV).
@@ -119,7 +119,7 @@ Return Fully Diluted Valuation (FDV).
 {{< /callout >}}
 
 ```
-https://api.pacviewer.com/v1/fully_diluted_valuation
+GET https://api.pacviewer.com/v1/fully_diluted_valuation
 ```
 
 {{< tabs items="Request, Response" >}}
