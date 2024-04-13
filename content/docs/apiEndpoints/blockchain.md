@@ -157,3 +157,93 @@ GET https://api.pacviewer.com/v1/fully_diluted_valuation
   {{< /tab >}}
 
 {{< /tabs >}}
+
+### Get Total Supply
+{{< hextra/hero-badge >}} {{< icon name="code" attributes="height=14" >}} Free, No Auth {{< /hextra/hero-badge >}}
+
+Return Total supply.
+
+```
+GET https://api.pacviewer.com/v1/total_supply
+```
+
+{{< tabs items="Request, Response" >}}
+  {{< tab >}}
+**Query Params**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+
+**Headers**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+**Body**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+  {{< /tab >}}
+  {{< tab >}}
+
+  **Status OK 200**
+
+  ```json
+{
+  "status": 200,
+  "message": "OK",
+  "data": {
+    "value": 928141.81715999
+  }
+}
+  ```
+  {{< /tab >}}
+
+{{< /tabs >}}
+
+### Get Total Staked
+{{< hextra/hero-badge >}} {{< icon name="code" attributes="height=14" >}} Free, No Auth {{< /hextra/hero-badge >}}
+
+Return Total staked.
+
+```
+GET https://api.pacviewer.com/v1/total_staked
+```
+
+{{< tabs items="Request, Response" >}}
+  {{< tab >}}
+**Query Params**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+
+**Headers**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+**Body**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+  {{< /tab >}}
+  {{< tab >}}
+
+  **Status OK 200**
+
+  ```json
+{
+  "status": 200,
+  "message": "OK",
+  "data": {
+    "value":  700059.365163147
+  }
+}
+  ```
+  {{< /tab >}}
+
+{{< /tabs >}}
