@@ -195,7 +195,7 @@ GET https://api.pacviewer.com/v1/total_supply
   "status": 200,
   "message": "OK",
   "data": {
-    "value": 928141.81715999
+    "value": 217541354.1235
   }
 }
   ```
