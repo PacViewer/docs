@@ -114,7 +114,7 @@ GET https://api.pacviewer.com/v1/total_value_locked
 Return Fully Diluted Valuation (FDV).
 
 {{< callout type="info" >}}
-**Fully Diluted Valuation (FDV) =** Staked + Circulating x Price
+**Fully Diluted Valuation (FDV) =** Max supply x price
 
 {{< /callout >}}
 
