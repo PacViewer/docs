@@ -163,6 +163,10 @@ GET https://api.pacviewer.com/v1/fully_diluted_valuation
 
 Return Total supply.
 
+{{< callout type="info" >}}
+**Total supply =** reserve + minted
+{{< /callout >}}
+
 ```
 GET https://api.pacviewer.com/v1/total_supply
 ```
@@ -207,6 +211,10 @@ GET https://api.pacviewer.com/v1/total_supply
 {{< hextra/hero-badge >}} {{< icon name="code" attributes="height=14" >}} Free, No Auth {{< /hextra/hero-badge >}}
 
 Return Total staked.
+
+{{< callout type="info" >}}
+**Total Staked =** total power
+{{< /callout >}}
 
 ```
 GET https://api.pacviewer.com/v1/total_staked
