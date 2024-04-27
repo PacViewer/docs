@@ -255,3 +255,57 @@ GET https://api.pacviewer.com/v1/total_staked
   {{< /tab >}}
 
 {{< /tabs >}}
+
+### Get Market
+{{< hextra/hero-badge >}} {{< icon name="code" attributes="height=14" >}} Free, No Auth {{< /hextra/hero-badge >}}
+
+Return market details.
+
+```
+GET https://api.pacviewer.com/v1/market
+```
+
+{{< tabs items="Request, Response" >}}
+  {{< tab >}}
+**Query Params**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+
+**Headers**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+**Body**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+  {{< /tab >}}
+  {{< tab >}}
+
+  **Status OK 200**
+
+  ```json
+{
+  "status": 200,
+  "message": "OK",
+  "data": {
+    "circulation_supply": 338640.513039625,
+    "total_supply": 21798588,
+    "total_staked": 697948.304120365,
+    "total_value_locked": 830498.4583490798,
+    "fully_diluted_valuation": 49976388,
+    "volume": 3075.8677,
+    "market_cap": 402953.08743303234,
+    "price": 1.189914,
+    "change_24h": 0,
+    "change_7d": 0
+  }
+}
+  ```
+  {{< /tab >}}
+
+{{< /tabs >}}
