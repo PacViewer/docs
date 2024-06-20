@@ -10,4 +10,4 @@ Similarly, all endpoints and parameter formatting remain the same across testnet
 | Network | Endpoint                  |
 |---------|---------------------------|
 | Mainnet | https://api.pacviewer.com | 
-| Testnet | https://phonix-api.pacviewer.com | 
+| Testnet | https://phoenix-api.pacviewer.com | 
