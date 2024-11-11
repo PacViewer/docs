@@ -309,3 +309,51 @@ GET https://api.pacviewer.com/v1/market
   {{< /tab >}}
 
 {{< /tabs >}}
+
+### Get Fee Meter
+{{< hextra/hero-badge >}} {{< icon name="code" attributes="height=14" >}} Free, No Auth {{< /hextra/hero-badge >}}
+
+Return fee details.
+
+```
+GET https://api.pacviewer.com/v1/fee
+```
+
+{{< tabs items="Request, Response" >}}
+  {{< tab >}}
+**Query Params**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+
+**Headers**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+**Body**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+  {{< /tab >}}
+  {{< tab >}}
+
+  **Status OK 200**
+
+  ```json
+{
+  "status": 200,
+  "message": "OK",
+  "data": {
+    "since_height": 360,
+    "minFee": 2000000,
+    "avgFee": 3500000,
+    "maxFee": 5000000
+  }
+}
+  ```
+  {{< /tab >}}
+
+{{< /tabs >}}
