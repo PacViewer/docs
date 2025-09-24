@@ -5,15 +5,75 @@ weight: 5
 
 List of endpoints for get current details of Pactus blockchain.
 
-### Get Circulation Supply 
+### Get Market Cap
+{{< hextra/hero-badge >}} {{< icon name="code" attributes="height=14" >}} Free, No Auth {{< /hextra/hero-badge >}}
+
+Returns current market cap.
+
+{{< callout type="info" >}}
+MarketCap formula
+
+**MarketCap =** Circulation Supply * Last Price
+
+{{< /callout >}}
+
+```
+GET https://api.pacviewer.com/v1/marketcap
+```
+
+{{< tabs items="Request, Response" >}}
+  {{< tab >}}
+**Query Params**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+| format | Return value with specific format (text) | text |
+
+
+**Headers**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+**Body**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+  {{< /tab >}}
+  {{< tab >}}
+
+  **Status OK 200**
+
+  ```json
+{
+    "status": 200,
+    "message": "OK",
+    "data": {
+        "value": 629447.2329217776
+    }
+}
+  ```
+
+  With `format` query:
+
+  ```
+  629447.2329217776
+  ```
+
+  {{< /tab >}}
+
+{{< /tabs >}}
+
+### Get Circulation Supply
 {{< hextra/hero-badge >}} {{< icon name="code" attributes="height=14" >}} Free, No Auth {{< /hextra/hero-badge >}}
 
 Returns current circulation supply.
 
 {{< callout type="info" >}}
-Circulation Supply formula ([Pactus FAQs](https://pactus.org/about/faq/#genesis_allocation)):
+Circulation Supply formula
 
-**Circulation supply =** (Foundation out + VC Allocation out + Team and Operations out + Community out + Team and Operations (Hot) Wallet out + Community (Hot) Wallet out) + Minted - Staked - (Hot)
+**Circulation supply =** Total Supply - Total Staked
 
 {{< /callout >}}
 
@@ -27,6 +87,7 @@ GET https://api.pacviewer.com/v1/circulation_supply
 
 | Key             | Description                                        | Example |
 |-----------------|----------------------------------------------------|---------|
+| format | Return value with specific format (text) | text |
 
 
 **Headers**
@@ -53,6 +114,13 @@ GET https://api.pacviewer.com/v1/circulation_supply
     }
 }
   ```
+
+  With `format` query:
+
+  ```
+  222983.605938173
+  ```
+
   {{< /tab >}}
 
 {{< /tabs >}}
@@ -63,7 +131,7 @@ GET https://api.pacviewer.com/v1/circulation_supply
 Return Total Value Locked (TVL).
 
 {{< callout type="info" >}}
-**Total Value Locked (TVL) =**  Staked x Price
+**Total Value Locked (TVL) =**  Total Staked * Last Price
 
 {{< /callout >}}
 
@@ -77,6 +145,7 @@ GET https://api.pacviewer.com/v1/total_value_locked
 
 | Key             | Description                                        | Example |
 |-----------------|----------------------------------------------------|---------|
+| format | Return value with specific format (text) | text |
 
 
 **Headers**
@@ -103,6 +172,13 @@ GET https://api.pacviewer.com/v1/total_value_locked
   }
 }
   ```
+
+  With `format` query:
+
+  ```
+  439734.2503423898
+  ```
+
   {{< /tab >}}
 
 {{< /tabs >}}
@@ -114,7 +190,7 @@ GET https://api.pacviewer.com/v1/total_value_locked
 Return Fully Diluted Valuation (FDV).
 
 {{< callout type="info" >}}
-**Fully Diluted Valuation (FDV) =** Max supply x price
+**Fully Diluted Valuation (FDV) =** Max supply * Last Price
 
 {{< /callout >}}
 
@@ -128,6 +204,7 @@ GET https://api.pacviewer.com/v1/fully_diluted_valuation
 
 | Key             | Description                                        | Example |
 |-----------------|----------------------------------------------------|---------|
+| format | Return value with specific format (text) | text |
 
 
 **Headers**
@@ -154,6 +231,13 @@ GET https://api.pacviewer.com/v1/fully_diluted_valuation
   }
 }
   ```
+
+  With `format` query:
+
+  ```
+  840257.9343933696
+  ```
+
   {{< /tab >}}
 
 {{< /tabs >}}
@@ -164,7 +248,7 @@ GET https://api.pacviewer.com/v1/fully_diluted_valuation
 Return Total supply.
 
 {{< callout type="info" >}}
-**Total supply =** reserve + minted
+**Total supply =** Max Supply - Treasury Balance
 {{< /callout >}}
 
 ```
@@ -177,6 +261,7 @@ GET https://api.pacviewer.com/v1/total_supply
 
 | Key             | Description                                        | Example |
 |-----------------|----------------------------------------------------|---------|
+| format | Return value with specific format (text) | text |
 
 
 **Headers**
@@ -203,6 +288,70 @@ GET https://api.pacviewer.com/v1/total_supply
   }
 }
   ```
+
+  With `format` query:
+
+  ```
+  217541354.1235
+  ```
+
+  {{< /tab >}}
+
+{{< /tabs >}}
+
+### Get Max Supply
+{{< hextra/hero-badge >}} {{< icon name="code" attributes="height=14" >}} Free, No Auth {{< /hextra/hero-badge >}}
+
+Return max supply.
+
+{{< callout type="info" >}}
+**Max supply =** 42,000,000 PAC
+{{< /callout >}}
+
+```
+GET https://api.pacviewer.com/v1/max_supply
+```
+
+{{< tabs items="Request, Response" >}}
+  {{< tab >}}
+**Query Params**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+| format | Return value with specific format (text) | text |
+
+
+**Headers**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+**Body**
+
+| Key             | Description                                        | Example |
+|-----------------|----------------------------------------------------|---------|
+
+  {{< /tab >}}
+  {{< tab >}}
+
+  **Status OK 200**
+
+  ```json
+{
+  "status": 200,
+  "message": "OK",
+  "data": {
+    "value": 42000000
+  }
+}
+  ```
+
+  With `format` query:
+
+  ```
+  42000000
+  ```
+
   {{< /tab >}}
 
 {{< /tabs >}}
@@ -226,6 +375,7 @@ GET https://api.pacviewer.com/v1/total_staked
 
 | Key             | Description                                        | Example |
 |-----------------|----------------------------------------------------|---------|
+| format | Return value with specific format (text) | text |
 
 
 **Headers**
@@ -252,6 +402,13 @@ GET https://api.pacviewer.com/v1/total_staked
   }
 }
   ```
+
+  With `format` query:
+
+  ```
+  700059.365163147
+  ```
+
   {{< /tab >}}
 
 {{< /tabs >}}
