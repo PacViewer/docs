@@ -55,7 +55,7 @@ GET https://api.pacviewer.com/v1/marketcap
 }
   ```
 
-  With `format` query:
+  With `format=text` query:
 
   ```
   629447.2329217776
@@ -115,7 +115,7 @@ GET https://api.pacviewer.com/v1/circulation_supply
 }
   ```
 
-  With `format` query:
+  With `format=text` query:
 
   ```
   222983.605938173
@@ -173,7 +173,7 @@ GET https://api.pacviewer.com/v1/total_value_locked
 }
   ```
 
-  With `format` query:
+  With `format=text` query:
 
   ```
   439734.2503423898
@@ -232,7 +232,7 @@ GET https://api.pacviewer.com/v1/fully_diluted_valuation
 }
   ```
 
-  With `format` query:
+  With `format=text` query:
 
   ```
   840257.9343933696
@@ -289,7 +289,7 @@ GET https://api.pacviewer.com/v1/total_supply
 }
   ```
 
-  With `format` query:
+  With `format=text` query:
 
   ```
   217541354.1235
@@ -346,7 +346,7 @@ GET https://api.pacviewer.com/v1/max_supply
 }
   ```
 
-  With `format` query:
+  With `format=text` query:
 
   ```
   42000000
@@ -403,7 +403,7 @@ GET https://api.pacviewer.com/v1/total_staked
 }
   ```
 
-  With `format` query:
+  With `format=text` query:
 
   ```
   700059.365163147
