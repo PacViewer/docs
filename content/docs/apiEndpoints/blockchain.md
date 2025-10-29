@@ -73,8 +73,7 @@ Returns current circulation supply.
 {{< callout type="info" >}}
 Circulation Supply formula
 
-**Circulation supply =** Total Supply - Total Staked
-
+**Circulating Supply** = Total Supply - Total Staked - BalanceOf(VC Allocation) - BalanceOf(Community)
 {{< /callout >}}
 
 ```
